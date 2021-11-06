@@ -28,10 +28,10 @@ class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    /*@BeforeEach
+    @BeforeEach
     public void cleanUp() {
         postsRepository.deleteAll();
-    }*/
+    }
 
     @Test
     @DisplayName("게시글 저장 및 불러오기")
