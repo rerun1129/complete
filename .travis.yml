@@ -18,9 +18,9 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
+    access_key_id: AKIA2Y4K7BDSLX7TWEZK
 
-    secret_access_key: $AWS_SECRET_KEY
+    secret_access_key: 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
 
     bucket: gt-webserver-build
     region: ap-northeast-2
