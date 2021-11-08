@@ -18,7 +18,7 @@ before_deploy:
   - cp build/libs/*.jar before-deploy/
   - cd before-deploy && zip -r before-deploy *
   - cd ../ && mkdir -p deploy
-  - mv before-deploy/before-deploy.zip deploy/complete.zip
+  - mv before-deploy/before-deploy.zip deploy/gt-webserver.zip
 
 deploy:
   - provider: s3
@@ -37,7 +37,7 @@ deploy:
     access_key_id: AKIA2Y4K7BDSLX7TWEZK
     secret_access_key: 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
     bucket: gt-webserver-build
-    key: complete.zip
+    key: gt-webserver.zip
     bundle_type: zip
     application: gt-webserver
     deployment_group: gt-webserver-group
