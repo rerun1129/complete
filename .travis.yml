@@ -29,6 +29,17 @@ deploy:
     local_dir: deploy
     wait-until-deployed: true
 
+  - provider: codedeploy
+    access_key_id: AKIA2Y4K7BDSLX7TWEZK
+    secret_access_key: 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
+    bucket: gt-webserver-build
+    key: complete.zip
+    bundle_type: zip
+    application: gt-webserver
+    deployment_group: gt-webserver-group
+    region: ap-northeast-2
+    wait-until-deployed: true
+
 # Travis CI 서버의 Home
 
 cache:
