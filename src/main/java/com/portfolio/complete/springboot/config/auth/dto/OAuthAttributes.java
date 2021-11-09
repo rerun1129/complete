@@ -28,7 +28,7 @@ public class OAuthAttributes {
         this.picture = picture;
     }
 
-    public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes) {  //registrationId은 로그인 유입을 구분하기 위해서 남겨둔 것임. 지금은 구글만 있어서 안씀.
+    public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes) {  //registrationId은 로그인 유입을 구분하기 위해서 남겨둔 것임.
 
         if ("naver".equals(registrationId)) {
             return ofNaver("id",attributes);
@@ -69,7 +69,7 @@ public class OAuthAttributes {
                 .name(name)
                 .email(email)
                 .picture(picture)
-                .role(Role.GUEST)
+                .role(Role.USER)
                 .build();
     }
 
