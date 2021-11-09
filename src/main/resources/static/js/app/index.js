@@ -24,7 +24,7 @@ var main = {
         $.ajax({
 
             type: 'POST',           //POST 방식으로 서버로 보냄
-            url: '/api/v1/posts',   //컨트롤러 save 메서드 주소
+            url: '/api/posts',   //컨트롤러 save 메서드 주소
             dataType: 'json',       //타입은 json
             contentType: 'application/json; charset=utf-8',     //컨텐츠 타입은 이런식
             data: JSON.stringify(data)                          //json 데이터를 문자열화 시킴
@@ -46,7 +46,7 @@ var main = {
 
         $.ajax({
             type: 'PUT',
-            url: '/api/v1/posts/'+id,
+            url: '/api/posts/'+id,
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(data)
@@ -64,7 +64,7 @@ var main = {
 
         $.ajax({
             type: 'DELETE',
-            url: '/api/v1/posts/'+id,
+            url: '/api/posts/'+id,
             dataType: 'json',
             contentType:'application/json; charset=utf-8'
         }).done(function () {

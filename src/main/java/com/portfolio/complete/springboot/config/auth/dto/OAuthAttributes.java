@@ -63,7 +63,7 @@ public class OAuthAttributes {
 
 
 
-    public User toEntity() {        //User의 엔티티를 생성, 가입 시에 기본권한이 있어야 하기 때문에 Role을 GUEST로 주었다.
+    public User toEntity() {        //User의 엔티티를 생성, 가입 시에 기본권한이 있어야 하기 때문에 Role을 GUEST로 주었다. -> 차기 버전에서 USER로 다시 부여함.
         return User
                 .builder()
                 .name(name)
