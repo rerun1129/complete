@@ -1,4 +1,5 @@
 {{>layout/header}}
+
 <h1>스프링 AWS 구현 완료</h1>
 <div class="col-md-12">
 <!--로그인 기능 영역-->
@@ -11,8 +12,8 @@
 {{/userName}}
 
 {{^userName}} <!--값이 없으면 ^를 사용, 그래서 로그인 버튼이 노출됨-->
-<a href="/oauth2/authorization/google" class="btn btn-success active" role="button">구글 로그인</a> <!--스프링 시큐리티에서 기본적으로 제공하는 로그인 URL 로그아웃 URL과 마찬가지로 개발자가 별도의 컨트롤러를 생성할 필요가 없음-->
-<a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">네이버 로그인</a>
+<a href="/oauth2/authorization/google" class="btn btn-success active" role="button">구글</a> <!--스프링 시큐리티에서 기본적으로 제공하는 로그인 URL 로그아웃 URL과 마찬가지로 개발자가 별도의 컨트롤러를 생성할 필요가 없음-->
+<a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">네이버</a>
 {{/userName}}
 </div>
 </div>
@@ -38,6 +39,6 @@
 {{/posts}}
 </tbody>
 </table>
-</div>
-{{>layout/sidebar}}
+
+
 {{>layout/footer}}

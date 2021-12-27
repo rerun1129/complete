@@ -10,5 +10,4 @@ public class CompleteApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CompleteApplication.class, args);
 	}
-
 }
